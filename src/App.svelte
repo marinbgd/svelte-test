@@ -4,6 +4,7 @@
   import Home from './home/Home.svelte';
   import HomeId from './home/HomeId.svelte';
   import HomeIdNum from './home/HomeIdNum.svelte';
+  import Nest from './nest/Nest.svelte';
 
 	export let name;
 </script>
@@ -21,6 +22,8 @@
       <li><Link to="/home/50">Home #50</Link></li>
       <li><Link to="/home/25/300">Home #25 #300</Link></li>
       <li><Link to="/about">About</Link></li>
+      <li><Link to="/nest">Nest</Link></li>
+      <li><Link to="/nest/first">Nest #First</Link></li>
     </ul>
   </nav>
 
@@ -29,6 +32,8 @@
     <Route path="/home" component="{Home}" />
     <Route path="/home/:id" component="{HomeId}" />
     <Route path="/home/:id/:num" component="{HomeIdNum}" />
+    <Route path="/nest" component="{Nest}" />
+    <Route path="/nest/:part" component="{Nest}" />
     <Route path="/about" component="{About}" />
   </section>
 </Router>

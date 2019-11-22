@@ -1,5 +1,5 @@
 <main>
-	<h1>Nest</h1>
+	<h1>Part</h1>
 </main>
 
 <style>

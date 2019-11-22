@@ -1,5 +1,14 @@
+<script>
+export let part;
+import Part from './Part.svelte'
+</script>
+
 <main>
 	<h1>Nest</h1>
+
+  {#if part}
+  <Part part={part} />
+  {/if}
 </main>
 
 <style>
