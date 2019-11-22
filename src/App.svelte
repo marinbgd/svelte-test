@@ -1,4 +1,5 @@
 <script>
+  // import './style/global.css';
   import { Router, Link, Route } from "svelte-routing";
   import About from './about/About.svelte';
   import Home from './home/Home.svelte';
