@@ -1,6 +1,6 @@
 <script>
-  // import './style/global.css';
   import { Router, Link, Route } from "svelte-routing";
+  import Welcome from './common/Welcome.svelte'
   import About from './about/About.svelte';
   import Home from './home/Home.svelte';
   import HomeId from './home/HomeId.svelte';
@@ -11,8 +11,7 @@
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Welcome {name} />
 
 <Router>
   <nav>
