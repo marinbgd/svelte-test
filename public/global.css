@@ -60,3 +60,37 @@ button:active {
 button:focus {
 	border-color: #666;
 }
+
+
+body {
+  background-color: #ddd;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+.global-main {
+  text-align: center;
+  padding: 1em;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.main-header {
+  color: #ff3e00;
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 100;
+
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .global-main {
+    max-width: none;
+  }
+}
