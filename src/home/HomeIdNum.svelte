@@ -1,25 +1,5 @@
 <script>
-  export let id, num;
+  export let params = {}
 </script>
 
-<main>
-	<h1>Home prop id = {id}, num = {num}</h1>
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-    text-align: center;
-	}
-
-</style>
+<h1 class="main-header">Home prop id = {params.id}, num = {params.num}</h1>
