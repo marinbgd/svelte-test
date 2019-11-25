@@ -2,8 +2,8 @@ export const getRandomNumber = () => {
     return Math.ceil((Math.random() * 100))
 }
 
-export const getRandomTitle = () => {
-    return `Title ${getRandomNumber()}`
+export const getRandomTitle = (titlePrefix = 'Title') => {
+    return `${titlePrefix} ${getRandomNumber()}`
 }
 
 export const getRandomParams = () => {

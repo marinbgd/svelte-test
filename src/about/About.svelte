@@ -1,12 +1,11 @@
 <script>
 import { aboutStore } from './About.store'
 import { onDestroy } from 'svelte';
-import { getRandomTitle, getRandomParams } from './About.helper'
+import { getRandomTitle, getRandomParams } from '../util/randomGenerator'
 
 
 let store = {}
 const unsubscribe = aboutStore.subscribe(aboutStore => {
-    console.log(aboutStore)
     store = aboutStore
 })
 
@@ -14,7 +13,7 @@ function handleChangeTitleClick () {
     aboutStore.update((oldStore) => {
         return {
             ...oldStore,
-            title: getRandomTitle(),
+            title: getRandomTitle('About'),
             params: getRandomParams(),
         }
     })
